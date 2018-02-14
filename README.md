@@ -20,12 +20,12 @@ To deploy this sample Python web application from the OpenShift web console, you
 
 The HTTPS URL of this code repository which should be supplied to the _Git Repository URL_ field when using _Add to project_ is:
 
-* https://github.com/CEC18/cec-hello-world.git
+* https://github.com/[your_github_user]/cec-hello-world.git
 
 If using the ``oc`` command line tool instead of the OpenShift web console, to deploy this sample Python web application, you can run:
 
 ```
-oc new-app https://github.com/CEC18/cec-hello-world.git
+oc new-app https://github.com/[your_github_user]/cec-hello-world.git
 ```
 
 In this case, because no language type was specified, OpenShift will determine the language by inspecting the code repository. Because the code repository contains a ``requirements.txt``, it will subsequently be interpreted as including a Python application. When such automatic detection is used, ``python:latest`` will be used.
